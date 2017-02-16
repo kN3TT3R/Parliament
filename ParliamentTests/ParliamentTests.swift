@@ -2,7 +2,7 @@
 //  ParliamentTests.swift
 //  ParliamentTests
 //
-//  Created by VDAB Cursist on 30/01/17.
+//  Created by Kenneth Debruyn on 30/01/17.
 //  Copyright © 2017 kN3TT3R. All rights reserved.
 //
 
