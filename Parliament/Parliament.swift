@@ -19,6 +19,21 @@ class Parliament {
         self.parties = parties
     }
     
+    func add(party: Party) {
+        parties.append(party)
+    }
+    
+    func remove(party: Party) {
+        let partyToBeRemoved = parties.filter( { $0.name == party.name } )
+    }
+    
+    func printDescription() {
+        for party in parties {
+            print("\(party.name)\n")
+            print("\(party.description)")
+        }
+    }
+    
 }
 
 

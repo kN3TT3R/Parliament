@@ -21,6 +21,18 @@ class Member {
         self.party = party
     }
     
+    func getParty() -> String {
+        return self.party
+    }
+    
+    func setParty(party: String) {
+        self.party = party
+    }
+    
+    var fullName: String {
+        return "\(firstName) \(lastName)"
+    }
+    
 }
 
 

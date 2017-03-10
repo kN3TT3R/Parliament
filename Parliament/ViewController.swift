@@ -57,6 +57,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         loadData()
+        //testSomeStuff()
         
 //        let personOne = Member(firstName: "AAAFirstName", lastName: "AAALastName", party: "Party One")
 //        let personTwo = Member(firstName: "BBBFirstName", lastName: "BBBLastName", party: "Party One")
@@ -95,9 +96,17 @@ class ViewController: UIViewController {
         let personOne = Member(firstName: "AAAFirstName", lastName: "AAALastName", party: "Party One")
         let personTwo = Member(firstName: "BBBFirstName", lastName: "BBBLastName", party: "Party One")
         let personThree = Member(firstName: "CCCFirstName", lastName: "CCCLastName", party: "Party One")
+        
         let partyOne = Party(name: "Party One", members: [personOne, personTwo, personThree])
+        
         let flemishParliament = Parliament(name: "Flemish Parliament", parties: [partyOne])
+        flemishParliament.description()
     }
+    
+//    func testSomeStuff() {
+//        print("eeeeeee")
+//        flemishParliament.description
+//    }
     
 }
 
