@@ -15,6 +15,9 @@
 		2F67C8501E3F6A7500163B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F67C84E1E3F6A7500163B3B /* LaunchScreen.storyboard */; };
 		2F67C85B1E3F6A7500163B3B /* ParliamentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F67C85A1E3F6A7500163B3B /* ParliamentTests.swift */; };
 		2F67C8661E3F6A7500163B3B /* ParliamentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F67C8651E3F6A7500163B3B /* ParliamentUITests.swift */; };
+		4F5E0AC61E5552AD006ABF13 /* Parliament.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E0AC51E5552AD006ABF13 /* Parliament.swift */; };
+		4F5E0ACC1E555321006ABF13 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E0ACB1E555321006ABF13 /* Party.swift */; };
+		4F5E0ACE1E555337006ABF13 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E0ACD1E555337006ABF13 /* Member.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		2F67C8611E3F6A7500163B3B /* ParliamentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParliamentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F67C8651E3F6A7500163B3B /* ParliamentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParliamentUITests.swift; sourceTree = "<group>"; };
 		2F67C8671E3F6A7500163B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F5E0AC51E5552AD006ABF13 /* Parliament.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parliament.swift; sourceTree = "<group>"; };
+		4F5E0ACB1E555321006ABF13 /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
+		4F5E0ACD1E555337006ABF13 /* Member.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,10 @@
 		2F67C8411E3F6A7500163B3B /* Parliament */ = {
 			isa = PBXGroup;
 			children = (
-				2F67C8421E3F6A7500163B3B /* AppDelegate.swift */,
-				2F67C8441E3F6A7500163B3B /* ViewController.swift */,
-				2F67C8461E3F6A7500163B3B /* Main.storyboard */,
-				2F67C84C1E3F6A7500163B3B /* Assets.xcassets */,
-				2F67C84E1E3F6A7500163B3B /* LaunchScreen.storyboard */,
-				2F67C8511E3F6A7500163B3B /* Info.plist */,
-				2F67C8491E3F6A7500163B3B /* Parliament.xcdatamodeld */,
+				4F5E0AC71E5552B3006ABF13 /* Model */,
+				4F5E0AC91E5552E0006ABF13 /* View */,
+				4F5E0ACA1E5552F2006ABF13 /* Controller */,
+				4F5E0AC81E5552BF006ABF13 /* Supporting Files */,
 			);
 			path = Parliament;
 			sourceTree = "<group>";
@@ -126,6 +129,44 @@
 				2F67C8671E3F6A7500163B3B /* Info.plist */,
 			);
 			path = ParliamentUITests;
+			sourceTree = "<group>";
+		};
+		4F5E0AC71E5552B3006ABF13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4F5E0AC51E5552AD006ABF13 /* Parliament.swift */,
+				4F5E0ACB1E555321006ABF13 /* Party.swift */,
+				4F5E0ACD1E555337006ABF13 /* Member.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4F5E0AC81E5552BF006ABF13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F67C8421E3F6A7500163B3B /* AppDelegate.swift */,
+				2F67C8491E3F6A7500163B3B /* Parliament.xcdatamodeld */,
+				2F67C8511E3F6A7500163B3B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F5E0AC91E5552E0006ABF13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F67C8461E3F6A7500163B3B /* Main.storyboard */,
+				2F67C84E1E3F6A7500163B3B /* LaunchScreen.storyboard */,
+				2F67C84C1E3F6A7500163B3B /* Assets.xcassets */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4F5E0ACA1E5552F2006ABF13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F67C8441E3F6A7500163B3B /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F5E0AC61E5552AD006ABF13 /* Parliament.swift in Sources */,
+				4F5E0ACE1E555337006ABF13 /* Member.swift in Sources */,
+				4F5E0ACC1E555321006ABF13 /* Party.swift in Sources */,
 				2F67C84B1E3F6A7500163B3B /* Parliament.xcdatamodeld in Sources */,
 				2F67C8451E3F6A7500163B3B /* ViewController.swift in Sources */,
 				2F67C8431E3F6A7500163B3B /* AppDelegate.swift in Sources */,
@@ -517,6 +561,7 @@
 				2F67C86C1E3F6A7500163B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F67C86D1E3F6A7500163B3B /* Build configuration list for PBXNativeTarget "ParliamentTests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +570,7 @@
 				2F67C86F1E3F6A7500163B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F67C8701E3F6A7500163B3B /* Build configuration list for PBXNativeTarget "ParliamentUITests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +579,7 @@
 				2F67C8721E3F6A7500163B3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
